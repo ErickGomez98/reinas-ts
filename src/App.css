@@ -2,13 +2,13 @@
   text-align: center;
 }
 
-.tablero{
-  width: 600px;
-  height: 600px;
+.tablero div {
+  float: left;
 }
 
 .tablero-table{
   width: 100%;
+  float: left;
   border: 1px solid black;
   border-collapse: collapse;
 }
@@ -18,6 +18,18 @@
   width: 100px;
   height: 100px; 
 }
+
+.tablero-controls {
+  margin: 30px;
+}
+
+.tablero-controls .btn {
+  padding: 5px 15px;
+  font-size: 20px;
+  display: block;
+  margin: 15px 0;
+}
+
 
 .tablero-table tr:nth-child(even) > td:nth-child(odd){
   background: #FACD8A;
@@ -30,4 +42,12 @@
 }
 .tablero-table tr:nth-child(odd) > td:nth-child(even){
   background: #FACD8A;
+}
+
+.tablero-table tr > td.has-reina{
+  background-image: url("reina.png") !important;
+  background-color: red;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  background-size: cover !important;
 }
